@@ -1,0 +1,7 @@
+node_modules
+json.sqlite
+package-lock.json
+assets/qrcode.png
+bot-298205-0b18f2591b4b.json
+.idea
+.env
