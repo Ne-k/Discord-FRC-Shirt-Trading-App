@@ -3,13 +3,15 @@ const { Client, Intents, Collection, MessageEmbed, MessageButton, MessageActionR
         disableMentions: "everyone",
         intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_BANS, Intents.FLAGS.GUILD_INVITES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.DIRECT_MESSAGE_REACTIONS],
     })
-
+require('dotenv').config()
 const { google } = require('googleapis');
 const sheets = google.sheets('v4');
-const formResponsesChannelId = '1097710441100230767';
+const formResponsesChannelId = process.env.DISCORD_CHANNEL_ID;
 let lastTimestamp = new Date().getTime();
 let savedRows = [];
 let currentIndex = 0;
+
+const spreadsheetID = process.env.GOOGLE_SPREADSHEET_ID
 
 client.commands = new Collection();
 client.invites = new Map()
@@ -23,12 +25,12 @@ client.aliases = new Collection();
 
 async function checkFormResponses() {
     const auth = new google.auth.GoogleAuth({
-        keyFile: './bot-298205-0b18f2591b4b.json',
+        keyFile: '../Path/to/Keyfile.json',
         scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
     });
 
     const request = {
-        spreadsheetId: "1BEk2bQND0kiyGQAyHClCePOD_Q5EY4Kl93YHPzk-9ls",
+        spreadsheetId: spreadsheetID,
         range: 'Form Responses 1!A2:E',
         auth,
     };
@@ -82,7 +84,7 @@ setInterval(checkFormResponses, 5000);
 
 
 client.on("interactionCreate", async (interaction) => {
-    const [customId, index] = interaction.customId.split('-'); // Split the customId to extract the index
+    const [customId, index] = interaction.customId.split('-');
     if (interaction.isButton()) {
         switch (customId) {
             case 'acceptTrade':

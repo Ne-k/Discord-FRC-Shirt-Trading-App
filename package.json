@@ -21,9 +21,7 @@
     "@colors/colors": "^1.5.0",
     "@discordjs/rest": "^0.5.0",
     "@google-cloud/local-auth": "^2.1.1",
-    "awesome-qr": "^2.1.5-rc.0",
     "better-sqlite3": "^7.5.3",
-    "binaryify-awesome-qr": "^2.2.2",
     "cross-fetch": "^3.1.5",
     "discord-api-types": "^0.33.3",
     "discord.js": "^13.15.1",
@@ -33,9 +31,6 @@
     "googleapis": "^109.0.1",
     "humanize-duration": "^3.27.2",
     "moment": "^2.29.3",
-    "mongoose": "^6.3.5",
-    "node-fetch": "^2.6.1",
-    "process": "^0.11.10",
     "quick.db": "^9.0.6"
   }
 }
