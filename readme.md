@@ -25,7 +25,9 @@ You're free to create a new form with a new style, but it'll mess with how the m
 ![img.png](assets/img23.png) 
 
 Then give it a name, like "FRC Shirt Trading Bot" or something, and then press "Create". And you'll be brought to a new page, 
-look for "Bot" under "Settings" on the left side of your screen ![img_1.png](assets/img_1553.png) 
+look for "Bot" under "Settings" on the left side of your screen 
+
+![img_1.png](assets/img_1553.png) 
 
 press it and create a new bot if it already isn't, and Press the "Reset Token" button ![img_2.png](assets/img_2342.png) doing so will show you the bot's token, save it because Discord won't tell you it again. Now scroll down a little but till you see "Privileged Gateway Intents"
 ![img_3.png](assets/img_3111.png) And make sure all the toggles are enabled. 
