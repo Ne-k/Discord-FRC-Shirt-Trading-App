@@ -50,3 +50,8 @@ It should look roughly like ![img_5.png](assets/img_5.png)
 >
 > Contributions are welcome to not make this as jank as it already is. 
 
+
+## TODO
+- [ ] Implement slash commands - Code is already there for it
+- [ ] Configurable database with slash commands
+
