@@ -10,7 +10,9 @@ You're free to create a new form with a new style, but it'll mess with how the m
 1. go to [Google's Developer Console](https://console.cloud.google.com/), create a project, then go to APIs and Services in the Navigation Menu, look up Google Sheets API, and enable it. 
 2. Then go to Credentials, and create a new Service account by going to "Manage Service Accounts" ![img.png](assets/img.png) And at the top, once you press that, you'll find a + with "Create Service Account", press that and go through the process of giving it a name, and a description. After that you can just press "Done", and bam, you created your first google service account. 
 
-3. Now you should see your service account in your console on this page under "Service Accounts" ![img_1.png](assets/img_1.png) Under the "Actions" colum with the three dots and press "Manage Keys". ![img_2.png](assets/img_2.png)
+3. Now you should see your service account in your console on this page under "Service Accounts" ![img_1.png](assets/img_1.png) Under the "Actions" colum with the three dots and press "Manage Keys". 
+
+![img_2.png](assets/img_2.png)
 
 4. After that you should be forwarded to a page with all your keys, in this case you don't have any keys since you just created the service account, but now Press "Add Key", and "Create new key". Pressing that will ask if you want a p12 or JSON file format, use JSON since it's the easier. So it should start downloading the json key file, which is good. ![img_3.png](assets/img_3.png)
 
